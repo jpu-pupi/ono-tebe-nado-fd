@@ -1,3 +1,7 @@
+.background-color {
+    background-color: #fff;
+}
+
 .header {
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
@@ -9,14 +13,15 @@
 
 .header__links-list {
     display: flex;
-    justify-content: space-between;
+    gap: 28.5px;
     padding-bottom: 5px;
     margin-right: 42px;
-    text-underline-offset: 4px;
+    text-underline-position: under;
+
 }
 
 .header__links-list-item {
-    padding-left: 5px;
+    padding-left: 4.5px;
     list-style: circle;
 }
 .header__links-list-item_no-bullit {
@@ -33,18 +38,16 @@
 }
 
 .address {
-    display: flex;
-    flex-direction: column;
-    max-width: 237px;
-    font-style: normal;
-    line-height: 1.3;
-    justify-self: end;
-    text-underline-offset: 4px;
+    font-style: normal; 
+    line-height: 1.36;
+    text-underline-position: under;
 }
 
 .header__address {
-    margin-right: 42px;
-    margin-bottom: 2px;
+    justify-self: end;
+    margin-right: 14.5px;
+    margin-bottom: 3px;
+    max-width: 230px;
 }
 
 .cover {
@@ -93,7 +96,7 @@
 .description {
     position: relative;
     display: flex;
-    margin-top: 95px;
+    margin: 95px 0 0 50px;
     z-index: 2;
 }
 
@@ -118,13 +121,173 @@
 }
 
 .lots {
-    margin-top: 180px;
+    margin: 184px 24px 0 24px;
+    color: #fff;
+}
+
+.lots__heading {
+    padding-left: 40px;
+    margin-bottom: 30px;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1;
+
+}
+
+.lots__card-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+
+}
+
+.lots__card-list-item {
+    position: relative;
+    width: 334px;
+    min-height: 596px;
+}
+
+.card-link {
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 48px 40px;
+    width: 100%;
+}
+
+.card-background-film {
+    background-image: url(../images/card-lot-01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-background-book {
+    background-image: url(../images/card-lot-02.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-background-picture {
+    background-image: url(../images/card-lot-03.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+.card-link-heading{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: 3.5px;
+}
+
+.card-link-content {
+    font-size: 20px;
+    line-height: 1.2;
+}
+.lots__look-more-link {
+    display: block;
+    padding-top: 30px;
+    padding-left: 40px;
+    color: #000;
+    text-underline-position: under;
+    font-size: 20px;
 }
 
 .about {
-    margin: 120px 24px 180px 24px;
+    margin: 154.5px 24px 0 24px;
+    display: grid;
+    grid-template-columns: 334px 1fr;
+    column-gap: 25px;
+
+}
+
+.logo_center {
+    justify-items: center;
+}
+
+.about__logo {  
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 240px;
+    height: 240px;
+    background-color: #000;
+    border-radius: 100%;
+}
+
+.about__logo-image {
+    width: 148px;
+}
+
+.about__title {
+    padding: 105px 0 103px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.about__text {
+    font-size: 20.1px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.paragpaph_margin {
+    margin-bottom: 24px;
 }
 
 .footer {
-   padding: 0 50px 82px 50px; 
+   padding: 181px 50px 82px 50px;
+   display: grid;
+   grid-template-columns: 1fr min-content 1fr;
+   font-size: 18px;
+}
+
+.address_footer {
+    width: 264px;
+}
+
+.footer__menu-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 164px;
+    text-align: center;
+}
+
+.footer__menu-link {
+    text-underline-offset: 4px;
+}
+
+.footer__menu-link_active {
+    text-decoration: none;
+}
+.footer__social-list {
+    display: flex;
+    gap: 48px;
+    justify-self: end;
+}
+
+.footer__social-list-item {
+    list-style: none;
+}
+
+.footer__social-link {
+    display: block;
+    width: 48px;
 }
