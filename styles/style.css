@@ -1,1 +1,130 @@
-/* место для вашего кода */
+.header {
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items: center;
+    padding: 92px 45px 93px 45px;
+    font-size: 18px;
+    line-height: 1;
+}
+
+.header__links-list {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    margin-right: 42px;
+    text-underline-offset: 4px;
+}
+
+.header__links-list-item {
+    padding-left: 5px;
+    list-style: circle;
+}
+.header__links-list-item_no-bullit {
+    list-style: none;
+}
+
+.header__link_active{
+    text-decoration: none;
+}
+
+.header__logo {
+    display: block;
+    min-width: 137px;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    max-width: 237px;
+    font-style: normal;
+    line-height: 1.3;
+    justify-self: end;
+    text-underline-offset: 4px;
+}
+
+.header__address {
+    margin-right: 42px;
+    margin-bottom: 2px;
+}
+
+.cover {
+    position: relative;
+    background-image: url(../images/cover.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 156px 20px 50px 50px;
+    min-height: 757px;
+    color: #fff;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+.overlay {
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.cover__title {
+    position: relative;
+    padding: 156px 20px 0 50px;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 1.35;
+    letter-spacing: 30px;
+    z-index: 2;
+}
+
+.aligned-text {
+    display: block;
+    width: 100%;
+}
+
+.aligned-text_center {
+    text-align: center;
+}
+
+.aligned-text_right {
+    text-align: right;
+}
+
+.description {
+    position: relative;
+    display: flex;
+    margin-top: 95px;
+    z-index: 2;
+}
+
+.cover__description-text {
+    padding-top: 13px;
+    font-size: 22px;
+}
+
+.letter-spacing-extended {
+    word-spacing: 18.5px;
+}
+
+.bet-button {
+    color: #fff;
+    background-color: transparent;
+    border: solid 1px;
+    padding: 12px 32px;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-left: 107px;
+}
+
+.lots {
+    margin-top: 180px;
+}
+
+.about {
+    margin: 120px 24px 180px 24px;
+}
+
+.footer {
+   padding: 0 50px 82px 50px; 
+}
