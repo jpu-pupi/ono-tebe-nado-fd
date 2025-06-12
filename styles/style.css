@@ -28,7 +28,7 @@
     list-style: none;
 }
 
-.header__link_active{
+.header__link_active {
     text-decoration: none;
 }
 
@@ -182,10 +182,10 @@
     background-image: url(../images/card-lot-03.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;  
+    background-size: cover;
 }
 
-.card-link-heading{
+.card-link-heading {
     font-weight: 700;
     font-size: 22px;
     line-height: 1.2;
@@ -219,7 +219,7 @@
     justify-items: center;
 }
 
-.about__logo {  
+.about__logo {
     display: flex;
     justify-content: center;
     align-content: center;
