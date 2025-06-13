@@ -24,6 +24,7 @@
     padding-left: 4.5px;
     list-style: circle;
 }
+
 .header__links-list-item_no-bullit {
     list-style: none;
 }
@@ -153,6 +154,7 @@
 }
 
 .card-link {
+    text-decoration: none;
     width: 100%;
 }
 
@@ -164,25 +166,22 @@
     width: 100%;
 }
 
-.card-background-film {
-    background-image: url(../images/card-lot-01.jpg);
+.card-background-position {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.card-background-film {
+    background-image: url(../images/card-lot-01.jpg);
 }
 
 .card-background-book {
     background-image: url(../images/card-lot-02.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .card-background-picture {
     background-image: url(../images/card-lot-03.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .card-link-heading {
@@ -198,8 +197,9 @@
     font-size: 20px;
     line-height: 1.2;
 }
+
 .lots__look-more-link {
-    display: block;
+    display: inline-block;
     padding-top: 30px;
     padding-left: 40px;
     color: #000;
@@ -242,20 +242,19 @@
 }
 
 .about__text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
     font-size: 20.1px;
     line-height: 24px;
     font-weight: 400;
 }
 
-.paragpaph_margin {
-    margin-bottom: 24px;
-}
-
 .footer {
-   padding: 181px 50px 82px 50px;
-   display: grid;
-   grid-template-columns: 1fr min-content 1fr;
-   font-size: 18px;
+    padding: 181px 50px 82px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 18px;
 }
 
 .address_footer {
@@ -266,7 +265,6 @@
     display: flex;
     flex-direction: column;
     list-style: none;
-    width: 164px;
     text-align: center;
 }
 
@@ -277,6 +275,7 @@
 .footer__menu-link_active {
     text-decoration: none;
 }
+
 .footer__social-list {
     display: flex;
     gap: 48px;
@@ -288,6 +287,9 @@
 }
 
 .footer__social-link {
-    display: block;
+    display: inline-block;
+}
+
+.footer__social-icon {
     width: 48px;
 }
